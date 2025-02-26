@@ -14,6 +14,8 @@ export default function DarkModeSwitcher() {
         <input
           type="checkbox"
           id="dark-mode-switch"
+          checked = {isDarkMode}
+          onChange={() => setIsDarkMode(!isDarkMode)}
         />
       </div>
       <label htmlFor="dark-mode-switch">Dark Mode</label>
