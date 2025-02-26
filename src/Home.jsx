@@ -10,6 +10,8 @@ import DarkModeSwitcher from './components/DarkModeSwitcher'
 export default function Home() {
   const [cardImage, setCardImage] = useState('/images/cornell-seal-black.svg');
 
+  <ImageSelector onImgChange={setCardImage}/>
+
   return (
     <main>
       <DarkModeSwitcher />
