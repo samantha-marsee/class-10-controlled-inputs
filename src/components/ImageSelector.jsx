@@ -4,13 +4,13 @@ export default function ImageSelector({onImgChange}) {
 
   return (
     <div className="selector">
-      <button onClick = {() => {onImgChange(blackSeal)}}>
+      <button onClick = {() => onImgChange(blackSeal)}>
         <img src={blackSeal} />
       </button>
-      <button onClick = {() => {onImgChange(redSeal)}}>
+      <button onClick = {() => onImgChange(redSeal)}>
         <img src={redSeal} />
       </button>
-      <button onClick = {() => {onImgChange(undefined)}}>
+      <button onClick = {() => onImgChange(undefined)}>
         <em>None</em>
       </button>
     </div>

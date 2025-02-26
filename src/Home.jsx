@@ -9,9 +9,6 @@ import DarkModeSwitcher from './components/DarkModeSwitcher'
 
 export default function Home() {
   const [cardImage, setCardImage] = useState('/images/cornell-seal-black.svg');
-
-  <ImageSelector onImgChange={setCardImage}/>
-
   return (
     <main>
       <DarkModeSwitcher />
@@ -22,7 +19,8 @@ export default function Home() {
         name="Ezra Cornell"
         email="ezra@cornell.edu"
       />
-      <ImageSelector />
+
+      <ImageSelector onImgChange={setCardImage}/>
 
       <h2>Gallery Example</h2>
       <Gallery />
