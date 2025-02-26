@@ -9,6 +9,8 @@ export default function ChatBot() {
       <label htmlFor="chatbot-prompt">Prompt:</label>
       <textarea
         id="chatbot-prompt"
+        value={prompt}
+        onChange={e => setPrompt(e.target.value)}
       />
       <button onClick={() => setSentPrompt(prompt)}>Send ({prompt})</button>
 
