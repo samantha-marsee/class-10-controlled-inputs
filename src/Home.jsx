@@ -8,13 +8,15 @@ import ChatBot from './components/ChatBot'
 import DarkModeSwitcher from './components/DarkModeSwitcher'
 
 export default function Home() {
+  const [cardImage, setCardImage] = useState('/images/cornell-seal-black.svg');
+
   return (
     <main>
       <DarkModeSwitcher />
 
       <h2>Business Card</h2>
       <BusinessCard
-        image='/images/cornell-seal-black.svg'
+        image={cardImage}
         name="Ezra Cornell"
         email="ezra@cornell.edu"
       />
